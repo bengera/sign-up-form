@@ -1,0 +1,51 @@
+$color-red: hsl(0, 100%, 74%);
+$color-green: hsl(154, 59%, 51%);
+$color-purple:hsl(248, 32%, 49%);
+$color-dark-gray: hsl(249, 10%, 26%);
+$color-light-grey: hsl(246, 25%, 77%);
+
+$font-primary: 'Poppins',
+serif;
+
+$bp-desktop : 90em; // 1440
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+
+}
+
+body {
+    font-family: $font-secondary;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+
+}
+
+// .master-container {
+//     max-width: 1140px;
+//     margin: 0 auto;
+// }
+
+
+// main {
+
+//     padding: 0 1.8rem;
+
+
+// }
