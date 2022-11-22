@@ -386,7 +386,8 @@ h1 {
     color: #FFF; }
   @media only screen and (min-width: 56.25em) {
     .free-trial {
-      width: 540px; } }
+      width: 540px;
+      height: 60px; } }
 
 .form {
   background-color: #FFF;
