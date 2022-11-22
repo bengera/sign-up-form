@@ -324,10 +324,30 @@ body {
   background-image: url(../images/bg-intro-mobile.png);
   background-color: #ff7a7a; }
 
+@media only screen and (min-width: 56.25em) {
+  main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh; } }
+
 .left-content {
-  text-align: center;
-  padding: 2rem;
   margin-top: 27px; }
+
+@media only screen and (min-width: 56.25em) {
+  .right-content {
+    margin-right: 2rem; } }
+
+.left-content,
+.right-content {
+  text-align: center;
+  padding: 2rem; }
+  @media only screen and (min-width: 56.25em) {
+    .left-content,
+    .right-content {
+      max-width: 565px;
+      align-self: center;
+      text-align: left; } }
 
 .bold {
   font-weight: 700; }
@@ -337,13 +357,16 @@ h1 {
   font-size: 28px;
   font-weight: 700;
   line-height: 36px; }
+  @media only screen and (min-width: 56.25em) {
+    h1 {
+      line-height: 55px;
+      font-size: 55px; } }
 
 .description {
   color: #FFF;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  margin-bottom: 64px; }
+  line-height: 26px; }
 
 .free-trial {
   background-color: #6055a5;
@@ -361,6 +384,9 @@ h1 {
       padding: 0; } }
   .free-trial__text {
     color: #FFF; }
+  @media only screen and (min-width: 56.25em) {
+    .free-trial {
+      width: 540px; } }
 
 .form {
   background-color: #FFF;
@@ -374,12 +400,16 @@ h1 {
   width: 100%;
   margin-top: 24px;
   box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2); }
+  @media only screen and (min-width: 56.25em) {
+    .form {
+      width: 540px; } }
 
 .form-control.success input {
   border-color: #2ecc71; }
 
 .form-control.error input {
-  border-color: #ff7a7a; }
+  border-color: #ff7a7a;
+  color: #ff7a7a; }
 
 .form-control {
   text-align: right;

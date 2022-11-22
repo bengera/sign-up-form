@@ -8,6 +8,7 @@ $font-primary: 'Poppins',
 serif;
 
 $bp-desktop: 90em; // 1440
+$bp-900: 56.25em;
 $bp-325: 20.3125em;
 
 *,
@@ -17,6 +18,7 @@ $bp-325: 20.3125em;
     padding: 0;
     box-sizing: inherit;
 }
+
 
 
 html {
@@ -42,10 +44,37 @@ body {
 
 }
 
+main {
+    @media only screen and (min-width: $bp-900) {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 100vh;
+    }
+}
+
 .left-content {
+    margin-top: 27px;
+}
+
+.right-content {
+    @media only screen and (min-width: $bp-900) {
+       margin-right: 2rem;
+    }
+
+}
+
+.left-content,
+.right-content {
     text-align: center;
     padding: 2rem;
-    margin-top: 27px;
+
+    @media only screen and (min-width: $bp-900) {
+        max-width: 565px;
+        align-self: center;
+        text-align: left;
+    }
+
 }
 
 .bold {
@@ -58,6 +87,13 @@ h1 {
     font-weight: 700;
     line-height: 36px;
 
+    @media only screen and (min-width: $bp-900) {
+       line-height: 55px;
+       font-size: 55px;
+       
+    }
+
+
 }
 
 .description {
@@ -65,7 +101,7 @@ h1 {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 64px;
+
 }
 
 .free-trial {
@@ -89,6 +125,10 @@ h1 {
 
 
     }
+
+    @media only screen and (min-width: $bp-900) {
+        width: 540px;
+    }
 }
 
 .form {
@@ -104,6 +144,9 @@ h1 {
     margin-top: 24px;
     box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
 
+    @media only screen and (min-width: $bp-900) {
+        width: 540px;
+    }
 }
 
 .form-control.success input {
@@ -112,6 +155,7 @@ h1 {
 
 .form-control.error input {
     border-color: $color-red;
+    color: $color-red;
 }
 
 .form-control {
@@ -130,10 +174,10 @@ h1 {
 
     }
 
-       
+
     small {
         color: $color-red;
-        
+
 
     }
 
