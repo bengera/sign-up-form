@@ -403,7 +403,8 @@ h1 {
   box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2); }
   @media only screen and (min-width: 56.25em) {
     .form {
-      width: 540px; } }
+      width: 540px;
+      padding: 2.5rem; } }
 
 .form-control.success input {
   border-color: #2ecc71; }
