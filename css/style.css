@@ -440,6 +440,9 @@ h1 {
   max-width: 249px;
   margin: 0 auto;
   line-height: 17px; }
+  @media only screen and (min-width: 56.25em) {
+    .terms-container {
+      max-width: initial; } }
 
 button {
   color: #FFF;

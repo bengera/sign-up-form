@@ -59,7 +59,7 @@ main {
 
 .right-content {
     @media only screen and (min-width: $bp-900) {
-       margin-right: 2rem;
+        margin-right: 2rem;
     }
 
 }
@@ -88,9 +88,9 @@ h1 {
     line-height: 36px;
 
     @media only screen and (min-width: $bp-900) {
-       line-height: 55px;
-       font-size: 55px;
-       
+        line-height: 55px;
+        font-size: 55px;
+
     }
 
 
@@ -203,6 +203,10 @@ h1 {
     max-width: 249px;
     margin: 0 auto;
     line-height: 17px;
+
+    @media only screen and (min-width: $bp-900) {
+        max-width: initial;
+    }
 }
 
 button {
@@ -222,6 +226,3 @@ button {
     top: 1rem;
     display: none;
 }
-
-
-
