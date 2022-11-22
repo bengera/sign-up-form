@@ -7,7 +7,8 @@ $color-light-grey: hsl(246, 25%, 77%);
 $font-primary: 'Poppins',
 serif;
 
-$bp-desktop : 90em; // 1440
+$bp-desktop: 90em; // 1440
+$bp-325: 20.3125em;
 
 *,
 *::before,
@@ -28,14 +29,156 @@ html {
 }
 
 body {
-    font-family: $font-secondary;
+
     font-size: 16px;
     line-height: 26px;
     margin: 0 auto;
     overflow-x: hidden;
+    font-family: $font-primary;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+
 
 
 }
+
+.left-content {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 27px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+
+}
+
+.description {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 64px;
+}
+
+.free-trial {
+    background-color: $color-purple;
+    height: 88px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    filter: drop-shadow(1px 5px 0px rgba(0, 0, 0, 0.20));
+
+    @media only screen and (max-width: $bp-325) {
+        padding: 0;
+    }
+
+    &__text {
+        color: #FFF;
+
+
+    }
+}
+
+.form {
+    background-color: #FFF;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 24px;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: $color-red;
+}
+
+.form-control {
+    text-align: right;
+    position: relative;
+
+    input {
+        height: 56px;
+        width: 100%;
+        font-size: 14px;
+        padding-left: 19.41px;
+        font-weight: 600;
+        border: 1px solid hsla(246, 25%, 77%, 0.5);
+        border-radius: 5px;
+
+
+    }
+
+       
+    small {
+        color: $color-red;
+        
+
+    }
+
+    &__terms {
+        font-size: 11px;
+        color: #BAB7D4;
+        font-weight: 500;
+    }
+
+
+
+}
+
+.terms-red {
+    color: $color-red;
+    font-weight: 600;
+}
+
+.terms-container {
+    text-align: center;
+    max-width: 249px;
+    margin: 0 auto;
+    line-height: 17px;
+}
+
+button {
+    color: #FFF;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: $color-green;
+    filter: drop-shadow(0px 5px 0px #2fae77e3);
+}
+
+.i-error {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: none;
+}
+
+
+
 
 // .master-container {
 //     max-width: 1140px;
